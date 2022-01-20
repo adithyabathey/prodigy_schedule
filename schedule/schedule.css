@@ -61,9 +61,10 @@ body {
     text-align: center;
 }
 .boxdiv {
-    width: 85%;
+    display: flex;
+    width: 97%;
     background-color: white;
-    margin-top: 35px;
+    margin-top: 18px;
     margin-left: 20px;
     padding: 0px 17px 5px 17px;
     border-radius: 25px;
@@ -84,6 +85,10 @@ em{
     padding-top: 5px;
     font-size: 0.75rem;
     font-weight: 600;
+}
+img{
+    height: 125px;
+    width: 150px;
 }
 .box-img{
     padding-top: 8px;
@@ -107,7 +112,22 @@ button:hover{
     color: #5A189A;
 }
   /* Anything udner 768px */
+  @media(max-width:820px){
+    .boxdiv{
+        width: 94%;
+    }
+}
   @media(max-width:768px){
+    em{
+        font-size: 0.5rem;
+    }
+    /* img{
+        height: 75px;
+        width: 100px;
+    } */
+    .boxdiv{
+        width: 85%;
+    }
     .text{
         padding: 0px;
     }
@@ -115,8 +135,15 @@ button:hover{
         padding: 5px;
         width: 200px;
     }
+    .box-heading{
+        font-size: 0.9rem;
+    }
+    .participate-button{
+        font-size: 0.6rem;
+    }
 }
-  
+
+
 /* schedule code ends */
 
 footer {
